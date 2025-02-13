@@ -2,8 +2,8 @@
 
 # Função para mostrar a mensagem de uso
 show_usage() {
-    echo -e     "Uso: \n\n      curl -sSL https://get.ticke.tz | sudo bash -s [-b <branchname>] <frontend_host> <email>\n\n"
-    echo -e "Exemplo: \n\n      curl -sSL https://get.ticke.tz | sudo bash -s ticketz.exemplo.com.br email@exemplo.com.br\n\n"
+    echo -e     "Uso: \n\n      curl -sSL https://get.whatendimento.lipedevv.tech | sudo bash -s [-b <branchname>] <frontend_host> <email>\n\n"
+    echo -e "Exemplo: \n\n      curl -sSL https://get.whatendimento.lipedevv.tech | sudo bash -s exemplo.com.br email@exemplo.com.br\n\n"
 }
 
 # Verifica se está rodando usando o bash
@@ -63,7 +63,7 @@ CURFOLDER=${PWD}
 which docker > /dev/null || curl -sSL https://get.docker.com | sh
 
 # Passo 3: Baixa o projeto e entra na pasta
-[ -d ticketz-docker-acme ] || git clone https://github.com/ticketz-oss/ticketz-docker-acme.git
+[ -d ticketz-docker-acme ] || git clone https://github.com/lipedevv/whatendimento-docker.git
 cd ticketz-docker-acme
 if ! git diff-index --quiet HEAD -- ; then
   echo "Salvando alterações locais com git stash push"
